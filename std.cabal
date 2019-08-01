@@ -8,7 +8,7 @@ synopsis:
 homepage:
   https://github.com/chessai/std
 license:
-  BSD-3-Clause
+  MIT
 license-file:
   LICENSE
 author:
@@ -25,5 +25,40 @@ extra-source-files:
   ChangeLog.md
 
 library
+  hs-source-dirs:
+    src
+  exposed-modules:
+    Std.Char
+    Std.Vector
+      Std.Vector.Partial
+      Std.Vector.Unsafe
+      Std.Vector.Boxed
+        Std.Vector.Boxed.Partial
+        Std.Vector.Boxed.Unsafe
+      Std.Vector.Storable
+        Std.Vector.Storable.Partial
+        Std.Vector.Storable.Unsafe
+      Std.Vector.Unboxed
+        Std.Vector.Unboxed.Partial
+        Std.Vector.Unboxed.Unsafe
+      Std.Vector.Primitive
+        Std.Vector.Primitive.Partial
+        Std.Vector.Primitive.Unsafe
+
+  build-depends:
+    , base >= 4.10 && < 10
+    , bytestring
+    , containers
+    , deepseq
+    , directory
+    , exceptions
+    , filepath
+    , hashable
+    , microlens
+    , mtl
+    , primitive
+    , text
+    , unordered-containers
+    , vector
   default-language:
     Haskell2010
