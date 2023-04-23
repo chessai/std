@@ -1,4 +1,4 @@
-cabal-version: 2.2
+cabal-version: 3.0
 name:
   std
 version:
@@ -29,36 +29,37 @@ library
     src
   exposed-modules:
     Std.Char
-    Std.Vector
-      Std.Vector.Partial
-      Std.Vector.Unsafe
-      Std.Vector.Boxed
-        Std.Vector.Boxed.Partial
-        Std.Vector.Boxed.Unsafe
-      Std.Vector.Storable
-        Std.Vector.Storable.Partial
-        Std.Vector.Storable.Unsafe
-      Std.Vector.Unboxed
-        Std.Vector.Unboxed.Partial
-        Std.Vector.Unboxed.Unsafe
-      Std.Vector.Primitive
-        Std.Vector.Primitive.Partial
-        Std.Vector.Primitive.Unsafe
+
+    -- Std.Vector
+    --   Std.Vector.Partial
+    --   Std.Vector.Unsafe
+    --   Std.Vector.Boxed
+    --     Std.Vector.Boxed.Partial
+    --     Std.Vector.Boxed.Unsafe
+    --   Std.Vector.Storable
+    --     Std.Vector.Storable.Partial
+    --     Std.Vector.Storable.Unsafe
+    --   Std.Vector.Unboxed
+    --     Std.Vector.Unboxed.Partial
+    --     Std.Vector.Unboxed.Unsafe
+    --   Std.Vector.Primitive
+    --     Std.Vector.Primitive.Partial
+    --     Std.Vector.Primitive.Unsafe
 
   build-depends:
     , base >= 4.10 && < 10
-    , bytestring
-    , containers
-    , deepseq
-    , directory
-    , exceptions
-    , filepath
-    , hashable
-    , microlens
-    , mtl
-    , primitive
+    -- , bytestring
+    -- , containers
+    -- , deepseq
+    -- , directory
+    -- , exceptions
+    -- , filepath
+    -- , hashable
+    -- , microlens
+    -- , mtl
+    -- , primitive
     , text
-    , unordered-containers
-    , vector
+    -- , unordered-containers
+    -- , vector
   default-language:
     Haskell2010
